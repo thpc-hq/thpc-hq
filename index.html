@@ -11,16 +11,106 @@
 
   <style>
     body {
-      margin: 16px;
+      background: url('./background_1920.jpg') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+
+      color: #fff;
     }
+
+    html, body {
+      height: 100%;
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 100;
+    }
+
+    h1 span {
+      font-size: 1.5rem;
+      display: block;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .masthead-bg {
+      background-color: rgba(0, 0, 0,.4);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+    }
+
+    .divider {
+      width: 20%;
+      border-bottom: 1px solid #fff;
+      position: absolute;
+      height: .5rem;
+    }
+
+    .content {
+      font-size: 1.2rem;
+    }
+
+    .email {
+      font-size: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .masthead {
+        width: 40rem;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        padding-right: 3rem;
+      }
+
+      .masthead-bg {
+        transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        transform-origin: top right;
+        -webkit-transform-origin: top right;
+      }
+
+      .divider {
+        right: 1rem;
+      }
+
+      .content {
+        font-size: 1rem;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
-  <h1 class="h1">Tony Hodgson Performance Coaching</h1>
-  <p>Level 3 road &amp; time trial coach</p>
-  <p>Co-founder Hetton Hawks go-ride club</p>
-  <p>Ride further. Ride faster. Email <a href="mailto: tony.hodgson@thpc.org.uk">tony.hodgson@thpc.org.uk</a></p>
+
+  <div class="masthead">
+    <div class="masthead-bg"></div>
+    <div class="container h-100">
+      <div class="row h-100">
+        <div class="col-12 my-auto text-sm-right pt-2 pt-sm-0">
+          <h1>Tony Hodgson <span class="pt-4 pt-sm-0">Performance Coaching</span></h1>
+          <div class="divider"></div>
+          <div class="content col-8 col-sm-8 float-sm-right px-0">
+            <p class="mt-5">Level 3 road &amp; time trial coach</p>
+            <p>Co-founder Hetton Hawks go-ride club</p>
+            <p>20&plus; years coaching experience</p>
+            <p class="email pt-3"><a class="badge badge-light" href="mailto: tony.hodgson@thpc.org.uk">tony.hodgson@thpc.org.uk</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
